@@ -4,6 +4,7 @@ function getInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
 //make the draw
 function luck(){
     
@@ -13,14 +14,20 @@ function luck(){
     var numFin = document.getElementById('numFin').value
     var res = document.getElementById('res')
 
-    if(qtSort <= 0){
-        window.alert(`Você não pode usar ${qtSort} para realizar sorteios`)
+    if(qtSort <= 0 || qtSort > numFin){
+        window.alert(`Você não pode usar ${qtSort} para realizar sorteios ou está tentando colocar mais sorteados do que deveria!`)
         document.getElementById('qtSort').focus()
     } else {
 
         for(i = 0; i < qtSort; i++){
-            numluck = getInt(numIni, numFin)  
-            numbers.push(numluck)
+            numluck = getInt(numIni, numFin) 
+            if(numbers.indexOf(numluck) > - 1){
+                luck()
+            } else {
+                numbers.push(numluck)
+            }
+            
+            
             
         }
             
