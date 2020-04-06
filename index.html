@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sorteador | Seu Site para Sorteios </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <header>
+        <div>
+            <h1>O Sorteador</h1>
+            <h4>Seu Site para Sorteios</h4>
+        </div>
+    </header>
+
+    <section>
+
+        <div id="capture">
+            Quantos números quer sortear: 
+            <input type="number" name="qtSort" id="qtSort" min="1" max="999999" value="1">
+            <br> Realizar sorteio do número:            
+            <input type="number" name="numIni" id="numIni" min="1" max="999999" value="1"> até  
+            <input type="number" name="numFin" id="numFin" min="1" max="999999" value="99">
+            <br><br>
+            <button onclick="luck()">Quero Sortear</button>
+        </div>
+
+        <div id="res"></div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

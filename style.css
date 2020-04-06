@@ -1,0 +1,79 @@
+body{
+   text-align: center;
+   width: auto;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
+
+header{
+    text-shadow: 1px 1px 5px rgb(116, 113, 113);
+    font-size: 20px;
+}
+
+section input{
+    width: 45px;
+    margin-top: 10px;
+    
+
+}
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    
+    
+}
+div#res{
+    font-size: 40px;
+    margin-top: 100px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    
+}
+@keyframes slidein{
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#capture{
+    font-size: 15pt;
+}
+#capture input{
+    width: 45px;
+    
+}
+#capture input#numFin{
+    width: 65px;
+
+}
+*/
